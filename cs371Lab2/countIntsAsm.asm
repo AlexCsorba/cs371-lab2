@@ -1,7 +1,7 @@
 ; extern "C" void countIntsAsm(int* theInts, int* counts, int nInts);
 ;   rcx  is the address of theInts
 ;   rdx  is the address of counts
-;	r8   is the number of ints in theInts
+;	r8d   is the number of ints in theInts
 
 
 RCX_Home equ 8

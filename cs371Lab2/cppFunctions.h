@@ -1,6 +1,6 @@
 namespace cs371Lab2Lib
 {
-	const int N_ASCII_CHARS = 128;
+	const int N_ASCII_CHARS = 256;
 	void zeroCpp(int* intsToZero, int nInts);
 	void countCharsCpp(const char* theString, int* counts, int nChars);
 	void sumOfPreviousElementsCpp(int* array, int length);

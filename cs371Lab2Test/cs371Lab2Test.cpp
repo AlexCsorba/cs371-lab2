@@ -46,15 +46,16 @@ extern "C" void sumOfPreviousElementsAsm_(int* theArray, int nElements);
 extern "C" void countIntsAsm_(int* theIntArray, int* counts, int nElementsInIntArray);
 
 // radixSortAsm_ will sort theIntArray given a scratch array of the same size as theIntArray, and 
-// a counts array that has been populated with countIntsAsm. The algorithm is as follows:
+// a counts array that has been populated with sumOfPreviousElements. The algorithm is as follows:
 // 
 //   for i = 0 to n-1
-//       scratch[counts[theIntArray[i]]] = theInteArray[i]
+//       scratch[counts[theIntArray[i]]] = theIntArray[i]
 //       ++counts[theIntArray[i]];
 // 
 //   Then copy the scratch array back to theIntArray.
 //   for i = 0 to n-1
 //       theIntArray[i] = scratch[i];
+
 extern "C" void radixSortAsm_(int* theIntArray, int* scratch, int* counts, int nElementsInIntArray);
 
 using namespace cs371Lab2Lib;
